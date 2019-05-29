@@ -1,0 +1,52 @@
+
+	body 
+	{
+		margin: 0;
+		font-size: 62.5%;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		padding: 15px 0;
+		background: #eeeeee;
+	}
+
+	.table {
+		margin-bottom: 15px;
+		width: 100%;
+		border-collapse: collapse;
+	}
+	.table_header td {
+		background: url(../img/tableheader-bg.gif) no-repeat left top;
+		padding: 5px 10px;
+		color: rgb(70,122,167);
+		border-top: 1px solid #CBD6DE;
+		border-bottom: 1px solid #ADBECB;
+		font-size: 1.1em;
+		font-weight: bold;
+	}
+	
+	.deletBtn{
+		display:inline-block;
+		background-color: red;
+		width:40px;
+		height:20px;
+		color: white;	
+		text-align: center;
+		border-radius: 5px;
+	}
+	.changeBtn{
+		display:inline-block;
+		background-color: green;
+		width:40px;
+		height:20px;
+		color: white;	
+		text-align: center;
+		border-radius: 5px;
+	}
+	
+	.table_header td {
+		border: 1px solid #CBD6DE;
+	}
+	
+	
+	
+
+	

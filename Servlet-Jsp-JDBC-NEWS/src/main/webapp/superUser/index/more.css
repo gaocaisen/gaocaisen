@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#article_div111{
+	width: 1000px;
+	height:1000px;
+	border: 1px red solid;
+	position:relative;
+	margin: 0 auto;
+}
+#article_div111 ul{
+	line-height: 30px;
+	font-size: 20px;
+	margin-left: 40px;
+}
+#article_div111 ul li a{
+	text-decoration: none;
+}
+
+#article_div111_div1{
+	position: absolute;
+	top: 900px;
+	left: 120px;
+	
+}
+a:link {color:black;}未被访问的链接
+
+a:visited {color:#00FF00;}已被访问的链接
+
+a:hover {color:#FF00FF;}鼠标指针移动到链接上
+
+a:active {color:#0000FF;}正在被点击的链接

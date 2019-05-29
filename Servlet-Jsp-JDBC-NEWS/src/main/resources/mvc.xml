@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean class="controller.LoginController"></bean>
+	<bean class="controller.DeptController"></bean>
+	<bean class="controller.UserController"></bean>
+	<bean class="controller.ModelController"></bean>
+	<bean class="controller.ArticleController"></bean>
+	<bean class="controller.NormalController"></bean>
+	<bean class="controller.IndexController"></bean>
+</beans>
+

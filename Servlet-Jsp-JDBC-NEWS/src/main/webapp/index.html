@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>奇奇怪怪新闻网首页</title>
+<link href="superUser/index/index-header.css" rel="stylesheet" type="text/css">
+<link href="superUser/index/index-article.css" rel="stylesheet" type="text/css">
+<link href="superUser/index/index-footer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="superUser/index/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="superUser/index/lunbo.js"></script>
+<script type="text/javascript">
+	//控制轮播图的序号
+	onload = function(){
+		$("#span0").css("color","red");
+	}
+	function changeImg(num){
+		//当前框中的图片
+		$("#article_div_div2_div1").find('img')[num].css("left","0");
+		/* document.getElementsByTagName("img")[num].style.left = "0px"; */
+		for(var i=0;i<=3;i++){
+			$("#span"+i).css("color","white");
+		}
+		$("#span"+(num)).css("color","blue");
+		k = num+1;
+		if(k==4){
+			k = 0;
+		}
+		if(num==0){
+			document.getElementsByTagName("img")[1].style.left = "200px";
+			document.getElementsByTagName("img")[2].style.left = "400px";
+			document.getElementsByTagName("img")[3].style.left = "600px";
+		}else if(num==1){
+			document.getElementsByTagName("img")[2].style.left = "200px";
+			document.getElementsByTagName("img")[3].style.left = "400px";
+			document.getElementsByTagName("img")[0].style.left = "600px";
+		}else if(num==2){
+			document.getElementsByTagName("img")[3].style.left = "200px";
+			document.getElementsByTagName("img")[0].style.left = "400px";
+			document.getElementsByTagName("img")[1].style.left = "600px";
+			
+		}else if(num==3){
+			document.getElementsByTagName("img")[0].style.left = "200px";
+			document.getElementsByTagName("img")[1].style.left = "400px";
+			document.getElementsByTagName("img")[2].style.left = "600px";
+		}
+} 
+</script>
+</head>
+<body>
+	<header>
+		<div id="header_div1">
+			<div id="header_div1_div1">
+				<ul id="header_div1_ul1">
+					<li><img src="superUser/index/images/fangzi.jpg"><div class="header_div1_div2_ul1_div"><a href="#">通讯员投稿</a></div></li>
+					<li><img src="superUser/index/images/zuoji.jpg"><div class="header_div1_div2_ul1_div"><a href="#">值班电话：023-77777777</a></div></li>
+				</ul>
+			</div>
+			<div id="header_div1_div2">
+				<ul id="header_div1_div2_ul1">
+					<li><img src="superUser/index/images/shoujiduan.jpg"><div class="header_div1_div2_ul1_div"><a href="#">移动端</a></div></li>
+					<li><img src="superUser/index/images/app.jpg"><div class="header_div1_div2_ul1_div"><a href="#">客户端</a></div></li>
+					<li><img src="superUser/index/images/weibo.jpg"><div class="header_div1_div2_ul1_div"><a href="#">微博</a></div></li>
+					<li><img src="superUser/index/images/weixin.jpg"><div class="header_div1_div2_ul1_div"><a href="#">微信</a></div></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div id="article_div">
+			<div>
+				<img alt="" src="superUser/index/article-images/tuoping.jpg">
+				<img alt="" src="superUser/index/article-images/head1.jpg">
+				<img alt="" src="superUser/index/article-images/guiyang.jpg" style="width: 1000px;">
+			</div>
+			<div id="article_div_div1">
+				<!-- 这是导航栏 -->
+				<div id="article_div_div1_div1">
+					<ul id="article_div_div1_ul">
+						<li><a>聚焦重庆</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="article_div_div2">
+				<!-- 这是轮播图 -->
+				<div id="article_div_div2_div1">
+					<img src="superUser/index/article-images/c.png">
+					<img src="superUser/index/article-images/g.jpg">
+					<img src="superUser/index/article-images/j.jpg">
+					<img src="superUser/index/article-images/l.jpg">
+					<div id="article_div_div2_div1_div1">
+						<span><a href="#" onclick="changeImg(0)" id="span0">1</a></span>
+						<span><a href="#" onclick="changeImg(1)" id="span1">2</a></span>
+						<span><a href="#" onclick="changeImg(2)" id="span2">3</a></span>
+						<span><a href="#" onclick="changeImg(3)" id="span3">4</a></span>
+					</div>
+				</div>
+				<div id="article_div_div2_div2">
+					<h1>最新的动态在这里</h1>
+					<ul id="article_div_div2_div2_ul">
+						<li><a href="#">我爱我家，卫生靠大家</a></li>
+					</ul>
+					<div id="article_div_div2_div2_div1"><a href="#">更多...</a></div>
+				</div>
+			</div>
+		</div>
+	</article>
+	<footer>
+		<div id="footer_div1">
+			<div class="footer_div1_div0">
+				<h1>栏目名</h1>
+				<ul>
+					<li><a href="#">我爱我家，卫生靠大家</a></li>
+					<li><a href="#">我爱我家，卫生靠大家</a></li>
+				</ul>
+				<div><a>更多...</a></div>
+			</div>
+			<div class="footer_div1_div1">
+				<h1>栏目名</h1>
+				<ul>
+					<li><a href="#">我爱我家，卫生靠大家</a></li>
+				</ul>
+				<div><a>更多...</a></div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

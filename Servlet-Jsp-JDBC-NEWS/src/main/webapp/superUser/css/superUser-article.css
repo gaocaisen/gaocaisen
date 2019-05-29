@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+#user_table_div{
+	width: 1200px;
+	margin: 0 auto;
+}
+#empty_div{
+	padding: 10px 10px;
+}
+#empty_div_h1{
+	display: inline-block;
+	margin-left: 730px;
+}
+#tanchuang_article_table tr{
+   	display:inline-block;
+   	margin-top: 10px;
+}
+.article_input{
+    width: 250px;
+}
+ 

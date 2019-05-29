@@ -1,0 +1,19 @@
+@charset "UTF-8";
+#empty_div{
+	height: 15px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#user_table_div{
+	width: 1200px;
+	margin: 0 auto;
+}
+#empty_div_h1{
+	display:inline-block;
+	margin-left:750px; 
+}
+#windom_form_table tr{
+	width: 150px;
+}
+
+
